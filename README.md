@@ -2,6 +2,14 @@
 
 No code is the best way to write secure and reliable applications. Write nothing; deploy nowhere.
 
+## Infrastructure
+
+**Place diagram here**
+
+When a user first accesses Nocode's URL, he/she hits the load balancer which allows external traffic into the cluster. The load balancer forwards the traffic to the Nginx ingress controller, which then forwards the traffic to either the frontend or the backend depending on the user's request, determined by the URL.
+
+As shown in the diagram, there are two more communications that occur; frontend communicates with the backend and the backend, with the database.
+
 ## Getting Started
 
 Start by not writing any code.
